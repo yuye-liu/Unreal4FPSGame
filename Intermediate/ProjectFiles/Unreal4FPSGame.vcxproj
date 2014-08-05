@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="DebugGame_RocketGame|x64">
+			<Configuration>DebugGame_RocketGame</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DebugGame_RocketGame|Win32">
+			<Configuration>DebugGame_RocketGame</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DebugGame_Editor|x64">
+			<Configuration>DebugGame_Editor</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DebugGame_Editor|Win32">
+			<Configuration>DebugGame_Editor</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_RocketGame|x64">
+			<Configuration>Development_RocketGame</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_RocketGame|Win32">
+			<Configuration>Development_RocketGame</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_Editor|x64">
+			<Configuration>Development_Editor</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_Editor|Win32">
+			<Configuration>Development_Editor</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Shipping_RocketGame|x64">
+			<Configuration>Shipping_RocketGame</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Shipping_RocketGame|Win32">
+			<Configuration>Shipping_RocketGame</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\Unreal4FPSGame.uproject" />
+		<None Include="..\..\Source\Unreal4FPSGame.Target.cs" />
+		<None Include="..\..\Source\Unreal4FPSGameEditor.Target.cs" />
+		<None Include="..\..\Config\DefaultEditor.ini" />
+		<None Include="..\..\Config\DefaultEngine.ini" />
+		<None Include="..\..\Config\DefaultGame.ini" />
+		<None Include="..\..\Config\DefaultInput.ini" />
+		<None Include="..\..\Source\Unreal4FPSGame\Unreal4FPSGame.Build.cs" />
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGame.cpp" />
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGameCharacter.cpp" />
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGameGameMode.cpp" />
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGameHUD.cpp" />
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGameProjectile.cpp" />
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGame.h" />
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGameCharacter.h" />
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGameGameMode.h" />
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGameHUD.h" />
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGameProjectile.h" />
+		<None Include="..\..\Source\Unreal4FPSGame\Resources\Windows\Unreal4FPSGame.ico" />
+		<ResourceCompile Include="..\..\Source\Unreal4FPSGame\Resources\Windows\Unreal4FPSGame.rc" />
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{2D6EF44B-7564-4BBD-A3DD-A7D8C99892C4}</ProjectGuid>
+		<Keyword>MakeFileProj</Keyword>
+		<RootNamespace>Unreal4FPSGame</RootNamespace>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_RocketGame|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_RocketGame|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_RocketGame|Win32'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<PlatformToolset>v120</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings" />
+	<PropertyGroup Label="UserMacros" />
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_RocketGame|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_RocketGame|x64'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Build.bat Unreal4FPSGame Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Rebuild.bat Unreal4FPSGame Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Clean.bat Unreal4FPSGame Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Win64\Unreal4FPSGame-Win64-DebugGame.exe</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Build.bat Unreal4FPSGameEditor Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Rebuild.bat Unreal4FPSGameEditor Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Clean.bat Unreal4FPSGameEditor Win64 DebugGame "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>C:\UE\4.3\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_RocketGame|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_RocketGame|x64'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Build.bat Unreal4FPSGame Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Rebuild.bat Unreal4FPSGame Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Clean.bat Unreal4FPSGame Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Win64\Unreal4FPSGame.exe</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Build.bat Unreal4FPSGameEditor Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Rebuild.bat Unreal4FPSGameEditor Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Clean.bat Unreal4FPSGameEditor Win64 Development "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>C:\UE\4.3\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_RocketGame|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_RocketGame|Win32'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Build.bat Unreal4FPSGame Win32 Shipping "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Rebuild.bat Unreal4FPSGame Win32 Shipping "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>C:\UE\4.3\Engine\Build\BatchFiles\Clean.bat Unreal4FPSGame Win32 Shipping "$(SolutionDir)$(SolutionName).uproject" -rocket</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Win32\Unreal4FPSGame-Win32-Shipping.exe</NMakeOutput>
+	</PropertyGroup>
+	<PropertyGroup>
+		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);UE_GAME=1;IS_PROGRAM=0;UE_ROCKET=1;UNICODE;_UNICODE;__UNREAL__;IS_MONOLITHIC=1;WITH_ENGINE=1;WITH_UNREAL_DEVELOPER_TOOLS=0;WITH_COREUOBJECT=1;USE_STATS_WITHOUT_ENGINE=0;WITH_PLUGIN_SUPPORT=0;USE_LOGGING_IN_SHIPPING=0;UE_BUILD_MINIMAL=1;WITH_EDITOR=1;WITH_EDITORONLY_DATA=0;WITH_SERVER_CODE=1;UBT_COMPILED_PLATFORM=Win64;WIN32=1;_WIN32_WINNT=0x0600;WINVER=0x0600;PLATFORM_WINDOWS=1;NDEBUG=1;UE_BUILD_DEVELOPMENT=1;UE_ENGINE_DIRECTORY=C:/UE/4.3/Engine/;UE_PROJECT_NAME=Unreal4FPSGame;ORIGINAL_FILE_NAME="Unreal4FPSGame.exe";UNREAL4FPSGAME_API=;UE_ENABLE_ICU=1;WITH_STEAMWORKS=0;WITH_DIRECTXMATH=0;CORE_API=;COREUOBJECT_API=;WITH_PHYSX=1;WITH_APEX=1;WITH_BOX2D=1;WITH_RECAST=1;ENGINE_API=;WITH_FREETYPE=1;SLATE_API=;INPUTCORE_API=;SLATECORE_API=;MESSAGING_API=;RENDERCORE_API=;RHI_API=;SHADERCORE_API=;ASSETREGISTRY_API=;ENGINEMESSAGES_API=;ENGINESETTINGS_API=;SYNTHBENCHMARK_API=;RENDERER_API=;AIMODULE_API=;GAMEPLAYDEBUGGER_API=;UE_EDITOR=1;UNREALED_API=;BSPMODE_API=;DOCUMENTATION_API=;PROJECTS_API=;SANDBOXFILE_API=;EDITORSTYLE_API=;SOURCECONTROL_API=;UNREALEDMESSAGES_API=;BLUEPRINTGRAPH_API=;XAUDIO2_API=;USERFEEDBACK_API=;COLLECTIONMANAGER_API=;KISMET_API=</NMakePreprocessorDefinitions>
+		<NMakeIncludeSearchPath>$(NMakeIncludeSearchPath);C:\UE\4.3\Engine\Source;..\..\Source;..\Build\Win64\Unreal4FPSGame\Inc\Unreal4FPSGame;..\..\Source\Unreal4FPSGame\Public;C:\UE\4.3\Engine\Source\Runtime\Core\Public;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Internationalization;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Async;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Concurrency;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Containers;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Delegates;C:\UE\4.3\Engine\Source\Runtime\Core\Public\GenericPlatform;C:\UE\4.3\Engine\Source\Runtime\Core\Public\HAL;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Math;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Misc;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Modules;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Modules\Boilerplate;C:\UE\4.3\Engine\Source\Runtime\Core\Public\ProfilingDebugging;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Serialization;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Serialization\Json;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Stats;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Templates;C:\UE\4.3\Engine\Source\Runtime\Core\Public\UObject;C:\UE\4.3\Engine\Source\Runtime\Core\Public\Windows;C:\UE\4.3\Engine\Source\Runtime\Core;C:\UE\4.3\Engine\Source\Runtime\CoreUObject\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\CoreUObject;C:\UE\4.3\Engine\Source\Runtime\CoreUObject\Public;C:\UE\4.3\Engine\Source\Runtime\CoreUObject\Public\Blueprint;C:\UE\4.3\Engine\Source\Runtime\CoreUObject\Public\Misc;C:\UE\4.3\Engine\Source\Runtime\CoreUObject\Public\Serialization;C:\UE\4.3\Engine\Source\Runtime\CoreUObject\Public\Templates;C:\UE\4.3\Engine\Source\Runtime\CoreUObject\Public\UObject;C:\UE\4.3\Engine\Source\Runtime\CoreUObject;C:\UE\4.3\Engine\Source\Runtime\Engine\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\Engine;C:\UE\4.3\Engine\Source\Runtime\Engine\Public;C:\UE\4.3\Engine\Source\Runtime\Engine\Public\AI;C:\UE\4.3\Engine\Source\Runtime\Engine\Public\Features;C:\UE\4.3\Engine\Source\Runtime\Engine\Public\Landscape;C:\UE\4.3\Engine\Source\Runtime\Engine\Public\Net;C:\UE\4.3\Engine\Source\Runtime\Engine\Public\Slate;C:\UE\4.3\Engine\Source\Runtime\Engine\Public\Tests;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\Slate;C:\UE\4.3\Engine\Source\Runtime\Slate\Public;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Application;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Commands;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Docking;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Layout;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\MultiBox;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Notifications;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Styling;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Text;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Views;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Framework\Text\IOS;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Colors;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Docking;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Images;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Input;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Layout;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Navigation;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Notifications;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Testing;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Text;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Tutorials;C:\UE\4.3\Engine\Source\Runtime\Slate\Public\Widgets\Views;C:\UE\4.3\Engine\Source\Runtime\InputCore\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\InputCore;C:\UE\4.3\Engine\Source\Runtime\InputCore\Public;C:\UE\4.3\Engine\Source\Runtime\InputCore;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\SlateCore;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Animation;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Application;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Brushes;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Fonts;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Input;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Layout;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Logging;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Rendering;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Sound;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Styling;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Textures;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Types;C:\UE\4.3\Engine\Source\Runtime\SlateCore\Public\Widgets;C:\UE\4.3\Engine\Source\Runtime\SlateCore;C:\UE\4.3\Engine\Source\Runtime\Slate;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\Messaging;C:\UE\4.3\Engine\Source\Runtime\Messaging\Public;C:\UE\4.3\Engine\Source\Runtime\Messaging\Public\Common;C:\UE\4.3\Engine\Source\Runtime\Messaging\Public\Interfaces;C:\UE\4.3\Engine\Source\Runtime\Messaging;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\RenderCore;C:\UE\4.3\Engine\Source\Runtime\RenderCore\Public;C:\UE\4.3\Engine\Source\Runtime\RenderCore;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\RHI;C:\UE\4.3\Engine\Source\Runtime\RHI\Public;C:\UE\4.3\Engine\Source\Runtime\RHI;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\ShaderCore;C:\UE\4.3\Engine\Source\Runtime\ShaderCore\Public;C:\UE\4.3\Engine\Source\Runtime\ShaderCore;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\AssetRegistry;C:\UE\4.3\Engine\Source\Runtime\AssetRegistry\Public;C:\UE\4.3\Engine\Source\Runtime\AssetRegistry;C:\UE\4.3\Engine\Source\Runtime\EngineMessages\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\EngineMessages;C:\UE\4.3\Engine\Source\Runtime\EngineMessages\Public;C:\UE\4.3\Engine\Source\Runtime\EngineMessages;C:\UE\4.3\Engine\Source\Runtime\EngineSettings\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\EngineSettings;C:\UE\4.3\Engine\Source\Runtime\EngineSettings\Public;C:\UE\4.3\Engine\Source\Runtime\EngineSettings;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\SynthBenchmark;C:\UE\4.3\Engine\Source\Developer\SynthBenchmark\Public;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\Renderer;C:\UE\4.3\Engine\Source\Runtime\Renderer\Public;C:\UE\4.3\Engine\Source\Runtime\Renderer;C:\UE\4.3\Engine\Source\Developer\SynthBenchmark;C:\UE\4.3\Engine\Source\Runtime\AIModule\Public;C:\UE\4.3\Engine\Source\Runtime\AIModule\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\AIModule;C:\UE\4.3\Engine\Source\Developer\GameplayDebugger\Public;C:\UE\4.3\Engine\Source\Developer\GameplayDebugger\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\GameplayDebugger;C:\UE\4.3\Engine\Source\Developer\GameplayDebugger;C:\UE\4.3\Engine\Source\Runtime\AIModule;C:\UE\4.3\Engine\Source\Runtime\Engine;..\..\Source\Unreal4FPSGame;..\Build\Win64\Inc\Unreal4FPSGame;C:\UE\4.3\Engine\Source\Programs\UnrealLightmass\Public;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\UnrealEd;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public\Commandlets;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public\Dialogs;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public\DragAndDrop;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public\Features;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public\Kismet2;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public\Layers;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public\Tests;C:\UE\4.3\Engine\Source\Editor\UnrealEd\Public\Toolkits;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\BspMode;C:\UE\4.3\Engine\Source\Editor\BspMode\Public;C:\UE\4.3\Engine\Source\Editor\BspMode;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\Documentation;C:\UE\4.3\Engine\Source\Editor\Documentation\Public;C:\UE\4.3\Engine\Source\Editor\Documentation;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\Projects;C:\UE\4.3\Engine\Source\Runtime\Projects\Public;C:\UE\4.3\Engine\Source\Runtime\Projects\Public\Interfaces;C:\UE\4.3\Engine\Source\Runtime\Projects;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\SandboxFile;C:\UE\4.3\Engine\Source\Runtime\SandboxFile\Public;C:\UE\4.3\Engine\Source\Runtime\SandboxFile;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\EditorStyle;C:\UE\4.3\Engine\Source\Editor\EditorStyle\Public;C:\UE\4.3\Engine\Source\Editor\EditorStyle\Public\Classes;C:\UE\4.3\Engine\Source\Editor\EditorStyle\Public\Interfaces;C:\UE\4.3\Engine\Source\Editor\EditorStyle;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\SourceControl;C:\UE\4.3\Engine\Source\Developer\SourceControl\Public;C:\UE\4.3\Engine\Source\Developer\SourceControl;C:\UE\4.3\Engine\Source\Editor\UnrealEdMessages\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\UnrealEdMessages;C:\UE\4.3\Engine\Source\Editor\UnrealEdMessages\Public;C:\UE\4.3\Engine\Source\Editor\UnrealEdMessages;C:\UE\4.3\Engine\Source\Editor\BlueprintGraph\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\BlueprintGraph;C:\UE\4.3\Engine\Source\Editor\BlueprintGraph\Public;C:\UE\4.3\Engine\Source\Editor\BlueprintGraph;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\XAudio2;C:\UE\4.3\Engine\Source\Runtime\Windows\XAudio2\Public;C:\UE\4.3\Engine\Source\Runtime\Windows\XAudio2;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\UserFeedback;C:\UE\4.3\Engine\Source\Editor\UserFeedback\Public;C:\UE\4.3\Engine\Source\Editor\UserFeedback;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\CollectionManager;C:\UE\4.3\Engine\Source\Developer\CollectionManager\Public;C:\UE\4.3\Engine\Source\Developer\CollectionManager;C:\UE\4.3\Engine\Source\Editor\UnrealEd;C:\UE\4.3\Engine\Source\Editor\Kismet\Classes;C:\UE\4.3\Engine\Intermediate\Build\Win64\Inc\Kismet;C:\UE\4.3\Engine\Source\Editor\Kismet\Public;C:\UE\4.3\Engine\Source\Editor\Kismet\Public\WorkflowOrientedApp;C:\UE\4.3\Engine\Source\Editor\Kismet;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\INCLUDE;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\ATLMFC\INCLUDE;C:\Program Files (x86)\Windows Kits\8.1\include\shared;C:\Program Files (x86)\Windows Kits\8.1\include\um;C:\Program Files (x86)\Windows Kits\8.1\include\winrt;;</NMakeIncludeSearchPath>
+		<NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

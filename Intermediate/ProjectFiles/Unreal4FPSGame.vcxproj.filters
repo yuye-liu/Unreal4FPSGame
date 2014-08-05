@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\Unreal4FPSGame.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{F6F404A7-2987-4E8E-B2E5-65FD45D8CDB5}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Unreal4FPSGame.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\Unreal4FPSGameEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{EB54367C-EBFB-48BE-AF1A-1DE9E54ED11E}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\Unreal4FPSGame">
+			<UniqueIdentifier>{3C5A3F56-6EB8-4255-B254-C5A53BF8BA78}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Unreal4FPSGame\Unreal4FPSGame.Build.cs">
+			<Filter>Source\Unreal4FPSGame</Filter>
+		</None >
+		<Filter Include="Source\Unreal4FPSGame\Private">
+			<UniqueIdentifier>{736C771A-FE46-411C-BF03-276651629B35}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGame.cpp">
+			<Filter>Source\Unreal4FPSGame\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGameCharacter.cpp">
+			<Filter>Source\Unreal4FPSGame\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGameGameMode.cpp">
+			<Filter>Source\Unreal4FPSGame\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGameHUD.cpp">
+			<Filter>Source\Unreal4FPSGame\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\Unreal4FPSGame\Private\Unreal4FPSGameProjectile.cpp">
+			<Filter>Source\Unreal4FPSGame\Private</Filter>
+		</ClCompile >
+		<Filter Include="Source\Unreal4FPSGame\Public">
+			<UniqueIdentifier>{4414CD12-1A3B-4569-8B0D-A5912AA047A9}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGame.h">
+			<Filter>Source\Unreal4FPSGame\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGameCharacter.h">
+			<Filter>Source\Unreal4FPSGame\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGameGameMode.h">
+			<Filter>Source\Unreal4FPSGame\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGameHUD.h">
+			<Filter>Source\Unreal4FPSGame\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\Unreal4FPSGame\Public\Unreal4FPSGameProjectile.h">
+			<Filter>Source\Unreal4FPSGame\Public</Filter>
+		</ClInclude >
+		<Filter Include="Source\Unreal4FPSGame\Resources">
+			<UniqueIdentifier>{79482041-C710-40F7-8704-6AE94B3423EF}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\Unreal4FPSGame\Resources\Windows">
+			<UniqueIdentifier>{FE7F5BA3-BA2D-4020-87CC-577662264CE9}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Unreal4FPSGame\Resources\Windows\Unreal4FPSGame.ico">
+			<Filter>Source\Unreal4FPSGame\Resources\Windows</Filter>
+		</None >
+		<ResourceCompile Include="..\..\Source\Unreal4FPSGame\Resources\Windows\Unreal4FPSGame.rc">
+			<Filter>Source\Unreal4FPSGame\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>

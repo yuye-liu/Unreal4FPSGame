@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{5AFD2C82-4041-1E37-41B6-B3ACE8C48246}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Unreal4FPSGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
