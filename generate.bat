@@ -1,0 +1,1 @@
+"C:\UE\4.3\Engine\Build\BatchFiles\RocketGenerateProjectFiles.bat" %~dp0\Unreal4FPSGame.uproject
